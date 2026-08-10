@@ -461,15 +461,6 @@
             margin-bottom: 8px; line-height: 1.8; max-width: 500px; margin-left: auto; margin-right: auto;
         }
 
-        .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
-        .gallery-item {
-            height: 120px; border-radius: 14px; overflow: hidden; border: 1.5px solid var(--border-gold); 
-            cursor: pointer; transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-        }
-        .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); }
-        .gallery-item:hover img { transform: scale(1.12); }
-        .gallery-item:hover { border-color: var(--gold-primary); box-shadow: 0 12px 25px rgba(212,175,55,0.2); transform: translateY(-3px); }
-
         .timer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
         .time-box {
             background: var(--bg-deep); padding: 15px 5px; border-radius: 14px;
@@ -653,22 +644,6 @@
 
             <h2 class="names-display">Mahmoud <span>&</span> Fatma</h2>
             <p class="invitation-quote">"حيث تتلاقى القلوب وتكتب أقدارنا أجمل الحكايات.. نتشرف بدعوتكم لحضور ليلة عمرنا الاستثنائية."</p>
-        </div>
-        
-        <div class="royal-card reveal-item">
-            <h3>📸 ألبوم اللحظات الخاصة</h3>
-            <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 12px;">انقر على أي صورة لتكبيرها</p>
-            <div class="gallery-grid">
-                <div class="gallery-item" onclick="previewImage(this.querySelector('img').src)">
-                    <img src="https://files.catbox.moe/6okdcc.jpg" alt="ذكري 1">
-                </div>
-                <div class="gallery-item" onclick="previewImage(this.querySelector('img').src)">
-                    <img src="https://files.catbox.moe/l1bqrd.jpg" alt="ذكري 2">
-                </div>
-                <div class="gallery-item" onclick="previewImage(this.querySelector('img').src)">
-                    <img src="https://files.catbox.moe/o57eoo.jpg" alt="ذكري 3">
-                </div>
-            </div>
         </div>
 
         <div class="royal-card reveal-item">
